@@ -1,0 +1,138 @@
+html{
+    scroll-behavior: smooth;
+}
+h2,h3,h4,.nav-item,#transition,footer{
+    text-align: center;
+}
+
+/*Header**/
+.bobineimg{
+    width: 20%;
+}
+.collapse{
+    margin-left: 2%;
+}
+.nav-item{
+    color: darkslategray;
+    font-weight: bold;
+    padding-right: 45px;
+}
+header{
+    background: url(./images/la-grande-illusion-affiche3.jpg);
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0px 0px 20px 20px;
+}
+h1{
+    font-size: 7em;
+    padding: 200px 0 0 20%;
+    text-shadow: -5px 6px 2px #e5f8de;
+    animation: titre ease 5s;
+
+}
+
+@keyframes titre {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;transform: translateY(0px);
+    }
+}
+/*fin header**/
+/* .img1{
+    width: 50%;
+} */
+
+/*left part*/
+#leftPart{
+    background-color: #e5f8de;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.elements{
+    padding: 70px 0;
+}  
+
+.elements img{
+    border-radius:50%;
+    width: 200px;
+}
+.elements p{
+    font-size: 1.2em;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+.elements .button{
+    text-align: right;
+    margin: 15px 4% 0 0;
+}
+
+/* right part */
+
+#rightPart{
+    background-color: rgb(172, 20, 20);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.tips{
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+}
+.tips h4{
+    position:relative;
+        color: green;
+        top: 50%;
+        transform: translateY(-50%);
+        text-shadow: 1px 1px 0 #BCF5A9,1px -1px 0 #BCF5A9,-1px 1px 0 #BCF5A9,-1px -1px 0 #BCF5A9,1px 0px 0 #BCF5A9,0px 1px 0 #BCF5A9,-1px 0px 0 #BCF5A9,0px -1px 0 #BCF5A9;
+
+}
+
+.tips:hover{
+    transform: scale(1.08);
+    opacity: 0.7;
+    transition: ease-out 0.3s;
+}
+
+
+/* media queries  */
+
+@media screen and (max-width:900px){
+    #rightPart{
+        display: flex;
+    }
+    #rightPart h2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:790px){
+    h1{
+        font-size: 3em;
+    }
+    .elements{
+        padding: 30px 0;
+
+    
+    }
+    .elements img{
+        max-width:140px;
+        margin-top: 40px;
+
+    }
+    #transition img{
+        width: 250px;
+    }
+    .tips{
+        height: 90px;
+        width: 90px;
+    }
+}
